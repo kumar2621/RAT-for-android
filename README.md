@@ -17,8 +17,7 @@ A Guide for making you own RAT(Remote access tool) for android with the help of 
 ![WhatsApp Image 2025-01-02 at 8 19 11 PM](https://github.com/user-attachments/assets/f3c586d5-d138-4236-b3ba-2fc5b7cc4c53)
 
 3. After installing you need to enable and start apache2 server.
-   (sudo systemctl start apache2),
-   (sudo systemctl enable apache2)
+   (sudo systemctl start apache2),(sudo systemctl enable apache2)
 ![WhatsApp Image 2025-01-02 at 8 22 12 PM](https://github.com/user-attachments/assets/e79ab4ab-95fd-4036-a629-ad5aaf41b1b4)
 ![WhatsApp Image 2025-01-02 at 8 23 06 PM](https://github.com/user-attachments/assets/22d2955e-c1dd-4f15-ac2b-5f4b0b65be02)
 
