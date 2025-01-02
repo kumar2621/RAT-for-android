@@ -82,3 +82,7 @@ exploit
 ![Screenshot 2025-01-02 193535](https://github.com/user-attachments/assets/babd95e8-5496-4bac-bb62-8ab251baf7e2)
 # Sms output
 ![Screenshot 2025-01-02 204049](https://github.com/user-attachments/assets/b0c6d2cd-8ae0-4946-b9fc-f0a42fc0cdf2)
+
+
+# NOTE
+"The firewall of the victim's device should be disabled because the payload is not designed to bypass the firewall."
