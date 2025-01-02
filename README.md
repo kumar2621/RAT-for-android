@@ -12,14 +12,20 @@ A Guide for making you own RAT(Remote access tool) for android with the help of 
    (sudo apt update && sudo apt upgrade -y)
 
 2. Install apache2 in your system.
-   (sudo apt install apache2 -y)
+   (sudo apt install apache2)
+![WhatsApp Image 2025-01-02 at 8 18 26 PM](https://github.com/user-attachments/assets/7a05e6a3-130c-4166-9722-b39d56ca3a5e)
+![WhatsApp Image 2025-01-02 at 8 19 11 PM](https://github.com/user-attachments/assets/f3c586d5-d138-4236-b3ba-2fc5b7cc4c53)
 
 3. After installing you need to enable and start apache2 server.
    (sudo systemctl start apache2),
    (sudo systemctl enable apache2)
+![WhatsApp Image 2025-01-02 at 8 22 12 PM](https://github.com/user-attachments/assets/e79ab4ab-95fd-4036-a629-ad5aaf41b1b4)
+![WhatsApp Image 2025-01-02 at 8 23 06 PM](https://github.com/user-attachments/assets/22d2955e-c1dd-4f15-ac2b-5f4b0b65be02)
 
 4. Verify that apache2 is running or not.
  (sudo systemctl status apache2)
+![WhatsApp Image 2025-01-02 at 8 24 19 PM](https://github.com/user-attachments/assets/70dfab6d-b595-486b-abda-166a7b2b57af)
+![WhatsApp Image 2025-01-02 at 8 24 39 PM](https://github.com/user-attachments/assets/559183fa-6e1f-4f59-9840-3e9f85f0ad6d)
 
 5. If you have firewall enable in you system you need to add rule in firewall for apache2.
    (sudo ufw allow 'Apache Full')
