@@ -1,3 +1,8 @@
+# ⚠️ Disclaimer
+This project is for educational purposes only.
+Any misuse or illegal activity involving this code is strictly prohibited.
+The author is not responsible for any consequences resulting from improper use.
+
 # RAT-for-android
 A Guide for making you own RAT(Remote access tool) for android with the help of msfconsole.
 
